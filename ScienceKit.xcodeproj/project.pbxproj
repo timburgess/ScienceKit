@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2250E8A11C17E0DB006FA174 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250E8A01C17E0DB006FA174 /* main.swift */; };
 		22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4CD681C17E3FE00DB3A16 /* CSV.swift */; };
+		22D4CD6D1C17E47F00DB3A16 /* Upsurge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,9 @@
 		2250E89D1C17E0DB006FA174 /* ScienceKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScienceKit; sourceTree = BUILT_PRODUCTS_DIR; };
 		2250E8A01C17E0DB006FA174 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		22D4CD681C17E3FE00DB3A16 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Upsurge.a; sourceTree = "<group>"; };
+		22D4CD6B1C17E47F00DB3A16 /* Upsurge.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Upsurge.swiftdoc; sourceTree = "<group>"; };
+		22D4CD6C1C17E47F00DB3A16 /* Upsurge.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = Upsurge.swiftmodule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D4CD6D1C17E47F00DB3A16 /* Upsurge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +73,9 @@
 		22D4CD671C17E3CD00DB3A16 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */,
+				22D4CD6B1C17E47F00DB3A16 /* Upsurge.swiftdoc */,
+				22D4CD6C1C17E47F00DB3A16 /* Upsurge.swiftmodule */,
 				22D4CD681C17E3FE00DB3A16 /* CSV.swift */,
 			);
 			path = Libs;
@@ -221,6 +229,10 @@
 		2250E8A51C17E0DB006FA174 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -228,6 +240,10 @@
 		2250E8A61C17E0DB006FA174 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
