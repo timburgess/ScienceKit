@@ -10,6 +10,8 @@
 		2250E8A11C17E0DB006FA174 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250E8A01C17E0DB006FA174 /* main.swift */; };
 		22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4CD681C17E3FE00DB3A16 /* CSV.swift */; };
 		22D4CD6D1C17E47F00DB3A16 /* Upsurge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */; };
+		22D4CD711C17E4CF00DB3A16 /* HDF5Kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4CD6E1C17E4CF00DB3A16 /* HDF5Kit.a */; };
+		22D4CD741C17E54700DB3A16 /* ReadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4CD731C17E54700DB3A16 /* ReadData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,11 @@
 		22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Upsurge.a; sourceTree = "<group>"; };
 		22D4CD6B1C17E47F00DB3A16 /* Upsurge.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Upsurge.swiftdoc; sourceTree = "<group>"; };
 		22D4CD6C1C17E47F00DB3A16 /* Upsurge.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = Upsurge.swiftmodule; sourceTree = "<group>"; };
+		22D4CD6E1C17E4CF00DB3A16 /* HDF5Kit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = HDF5Kit.a; sourceTree = "<group>"; };
+		22D4CD6F1C17E4CF00DB3A16 /* HDF5Kit.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = HDF5Kit.swiftdoc; sourceTree = "<group>"; };
+		22D4CD701C17E4CF00DB3A16 /* HDF5Kit.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = HDF5Kit.swiftmodule; sourceTree = "<group>"; };
+		22D4CD721C17E4F500DB3A16 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		22D4CD731C17E54700DB3A16 /* ReadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReadData.swift; path = Source/ReadData.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D4CD6D1C17E47F00DB3A16 /* Upsurge.a in Frameworks */,
+				22D4CD711C17E4CF00DB3A16 /* HDF5Kit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +73,7 @@
 		2250E89F1C17E0DB006FA174 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				22D4CD731C17E54700DB3A16 /* ReadData.swift */,
 				2250E8A01C17E0DB006FA174 /* main.swift */,
 			);
 			path = Source;
@@ -73,6 +82,10 @@
 		22D4CD671C17E3CD00DB3A16 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				22D4CD721C17E4F500DB3A16 /* module.modulemap */,
+				22D4CD6E1C17E4CF00DB3A16 /* HDF5Kit.a */,
+				22D4CD6F1C17E4CF00DB3A16 /* HDF5Kit.swiftdoc */,
+				22D4CD701C17E4CF00DB3A16 /* HDF5Kit.swiftmodule */,
 				22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */,
 				22D4CD6B1C17E47F00DB3A16 /* Upsurge.swiftdoc */,
 				22D4CD6C1C17E47F00DB3A16 /* Upsurge.swiftmodule */,
@@ -138,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D4CD741C17E54700DB3A16 /* ReadData.swift in Sources */,
 				22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */,
 				2250E8A11C17E0DB006FA174 /* main.swift in Sources */,
 			);
@@ -186,6 +200,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "$(SOURCE_ROOT)/Libs";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -223,6 +238,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "$(SOURCE_ROOT)/Libs";
 			};
 			name = Release;
 		};
