@@ -18,4 +18,4 @@ ScienceKit is a free Xcode 7.2 project with useful scientific functions and libr
 
 **SwiftCSV** - utility for easily reading columns and rows of CSV files
 
-All libraries provided have been built with the Swift version 2.2 snapshot provided by Apple. You use the project, you will need to follow the installation instructions at https://swift.org/download/#latest-development-snapshots
+All libraries provided have been built with the Swift version 2.2 snapshot provided by Apple. In order to use the project, you will need to follow the installation instructions at https://swift.org/download/#latest-development-snapshots
