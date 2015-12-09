@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2250E8A11C17E0DB006FA174 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250E8A01C17E0DB006FA174 /* main.swift */; };
+		22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4CD681C17E3FE00DB3A16 /* CSV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		2250E89D1C17E0DB006FA174 /* ScienceKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScienceKit; sourceTree = BUILT_PRODUCTS_DIR; };
 		2250E8A01C17E0DB006FA174 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		22D4CD681C17E3FE00DB3A16 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,8 @@
 		2250E8941C17E0DB006FA174 = {
 			isa = PBXGroup;
 			children = (
-				2250E89F1C17E0DB006FA174 /* ScienceKit */,
+				22D4CD671C17E3CD00DB3A16 /* Libs */,
+				2250E89F1C17E0DB006FA174 /* Source */,
 				2250E89E1C17E0DB006FA174 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +57,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2250E89F1C17E0DB006FA174 /* ScienceKit */ = {
+		2250E89F1C17E0DB006FA174 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				2250E8A01C17E0DB006FA174 /* main.swift */,
 			);
-			path = ScienceKit;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		22D4CD671C17E3CD00DB3A16 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				22D4CD681C17E3FE00DB3A16 /* CSV.swift */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */,
 				2250E8A11C17E0DB006FA174 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +251,7 @@
 				2250E8A61C17E0DB006FA174 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
