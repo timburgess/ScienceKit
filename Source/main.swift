@@ -8,5 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
+print("Hello, World! This is ScienceKit!")
+
+// Replace this with code from an example
 

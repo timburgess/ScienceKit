@@ -11,7 +11,7 @@
 		22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4CD681C17E3FE00DB3A16 /* CSV.swift */; };
 		22D4CD6D1C17E47F00DB3A16 /* Upsurge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */; };
 		22D4CD711C17E4CF00DB3A16 /* HDF5Kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4CD6E1C17E4CF00DB3A16 /* HDF5Kit.a */; };
-		22D4CD741C17E54700DB3A16 /* ReadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4CD731C17E54700DB3A16 /* ReadData.swift */; };
+		22D4CD741C17E54700DB3A16 /* ReadCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4CD731C17E54700DB3A16 /* ReadCSV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +29,7 @@
 /* Begin PBXFileReference section */
 		2250E89D1C17E0DB006FA174 /* ScienceKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScienceKit; sourceTree = BUILT_PRODUCTS_DIR; };
 		2250E8A01C17E0DB006FA174 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		22B0AB151C18DF0700927057 /* SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.txt"; sourceTree = "<group>"; };
 		22D4CD681C17E3FE00DB3A16 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 		22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Upsurge.a; sourceTree = "<group>"; };
 		22D4CD6B1C17E47F00DB3A16 /* Upsurge.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Upsurge.swiftdoc; sourceTree = "<group>"; };
@@ -37,7 +38,7 @@
 		22D4CD6F1C17E4CF00DB3A16 /* HDF5Kit.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = HDF5Kit.swiftdoc; sourceTree = "<group>"; };
 		22D4CD701C17E4CF00DB3A16 /* HDF5Kit.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = HDF5Kit.swiftmodule; sourceTree = "<group>"; };
 		22D4CD721C17E4F500DB3A16 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		22D4CD731C17E54700DB3A16 /* ReadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReadData.swift; path = Source/ReadData.swift; sourceTree = SOURCE_ROOT; };
+		22D4CD731C17E54700DB3A16 /* ReadCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReadCSV.swift; path = Source/ReadCSV.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		2250E8941C17E0DB006FA174 = {
 			isa = PBXGroup;
 			children = (
+				22B0AB141C18DEE100927057 /* Data */,
 				22D4CD671C17E3CD00DB3A16 /* Libs */,
 				2250E89F1C17E0DB006FA174 /* Source */,
 				2250E89E1C17E0DB006FA174 /* Products */,
@@ -73,10 +75,18 @@
 		2250E89F1C17E0DB006FA174 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				22D4CD731C17E54700DB3A16 /* ReadData.swift */,
+				22D4CD731C17E54700DB3A16 /* ReadCSV.swift */,
 				2250E8A01C17E0DB006FA174 /* main.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		22B0AB141C18DEE100927057 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				22B0AB151C18DF0700927057 /* SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.txt */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		22D4CD671C17E3CD00DB3A16 /* Libs */ = {
@@ -151,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22D4CD741C17E54700DB3A16 /* ReadData.swift in Sources */,
+				22D4CD741C17E54700DB3A16 /* ReadCSV.swift in Sources */,
 				22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */,
 				2250E8A11C17E0DB006FA174 /* main.swift in Sources */,
 			);
