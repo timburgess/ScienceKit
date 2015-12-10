@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2250E8A11C17E0DB006FA174 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250E8A01C17E0DB006FA174 /* main.swift */; };
+		22B0AB181C18FEB800927057 /* ReadHDF5andLinRegress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B0AB171C18FEB800927057 /* ReadHDF5andLinRegress.swift */; };
 		22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4CD681C17E3FE00DB3A16 /* CSV.swift */; };
 		22D4CD6D1C17E47F00DB3A16 /* Upsurge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */; };
 		22D4CD711C17E4CF00DB3A16 /* HDF5Kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4CD6E1C17E4CF00DB3A16 /* HDF5Kit.a */; };
@@ -30,6 +31,8 @@
 		2250E89D1C17E0DB006FA174 /* ScienceKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScienceKit; sourceTree = BUILT_PRODUCTS_DIR; };
 		2250E8A01C17E0DB006FA174 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		22B0AB151C18DF0700927057 /* SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.txt"; sourceTree = "<group>"; };
+		22B0AB161C18FE6500927057 /* SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.h5 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.h5"; sourceTree = "<group>"; };
+		22B0AB171C18FEB800927057 /* ReadHDF5andLinRegress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadHDF5andLinRegress.swift; sourceTree = "<group>"; };
 		22D4CD681C17E3FE00DB3A16 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 		22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Upsurge.a; sourceTree = "<group>"; };
 		22D4CD6B1C17E47F00DB3A16 /* Upsurge.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Upsurge.swiftdoc; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				22D4CD731C17E54700DB3A16 /* ReadCSV.swift */,
+				22B0AB171C18FEB800927057 /* ReadHDF5andLinRegress.swift */,
 				2250E8A01C17E0DB006FA174 /* main.swift */,
 			);
 			path = Source;
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				22B0AB151C18DF0700927057 /* SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.txt */,
+				22B0AB161C18FE6500927057 /* SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.h5 */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B0AB181C18FEB800927057 /* ReadHDF5andLinRegress.swift in Sources */,
 				22D4CD741C17E54700DB3A16 /* ReadCSV.swift in Sources */,
 				22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */,
 				2250E8A11C17E0DB006FA174 /* main.swift in Sources */,

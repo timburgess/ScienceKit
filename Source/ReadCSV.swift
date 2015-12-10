@@ -1,7 +1,8 @@
 //  Rename this to main.swift to use it
 //
-//  ReadData.swift
-//  ScienceKit example - Tim Burgess - timburgess@mac.com
+//  ReadCSV.swift
+//  ScienceKit example
+//  Contributed by Tim Burgess - timburgess@mac.com
 //
 //  Example code for reading from a CSV file and calculating
 //  mean and standard deviation of data
@@ -36,7 +37,9 @@ func readCSV(path: String) -> ([String]!, [Double]!) {
   return (nil, nil)
 }
 
+/* Uncomment this section for main.swift
 // by default, executable runs from ./build/debug/
 let (dates, sst) = readCSV("../../Data/SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.txt")
 let allSST = RealArray(sst)
-//print(String(format: "Mean temperature value is %5.2fC with a standard deviation of %4.2fC", mean(allSST), std(allSST)))
+print(String(format: "Mean temperature value is %5.2fC with a standard deviation of %4.2fC", mean(allSST), std(allSST)))
+*/
