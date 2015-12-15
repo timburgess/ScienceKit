@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ScienceKit.xcodeproj">
+      location = "self:/Users/tim/work/ScienceKit/ReadCSV/ReadCSV.xcodeproj">
    </FileRef>
 </Workspace>
