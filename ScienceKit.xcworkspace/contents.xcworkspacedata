@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DotProduct/DotProduct.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ReadHDF5andLinRegress/ReadHDF5andLinregress.xcodeproj">
    </FileRef>
    <FileRef
