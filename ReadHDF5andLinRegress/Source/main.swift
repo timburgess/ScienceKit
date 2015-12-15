@@ -1,4 +1,3 @@
-//  Rename this to main.swift to use it
 //
 //  ReadHDF5andLinRegress.swift
 //  ScienceKit example
@@ -30,8 +29,8 @@ func readFloatNode(path: String, nodeName: String) -> [Float] {
   }
   return dataset[0..]
 }
-  
-/* Uncomment this section for main.swift
+
+
 // by default, executable runs from ./build/debug/
 let floatSST = readFloatNode("../../Data/SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.h5", nodeName: "sst")
 
@@ -39,4 +38,3 @@ let sst = RealArray(floatSST.map { Double($0) })
 let x = (0..<sst.count).map { Double($0) }
 let (slope, intercept) = linregress(x, sst)
 print(String(format: "Average daily increase of %6.4f degrees C from %5.3f C over %d days", slope, intercept, sst.count))
-*/
