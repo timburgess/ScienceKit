@@ -10,7 +10,7 @@ The Swift programming language is highly applicable to writing programs that per
  
 ## ScienceKit
 
-ScienceKit is a free Xcode 7.2 project with useful scientific functions and libraries (modules) already built into the project. It presently contains:
+ScienceKit is a free Xcode 7.2 workspace that contains a number of example projects. Each project demonstrates how to use scientific functions and libraries (modules) available in the project. Projects presently contain:
 
 **Upsurge** - simple but high-performance SIMD functions for vectors and matrices, digital signal processing and image manipulation
 
@@ -18,4 +18,4 @@ ScienceKit is a free Xcode 7.2 project with useful scientific functions and libr
 
 **SwiftCSV** - utility for easily reading columns and rows of CSV files
 
-All libraries provided have been built with the Swift version 2.2 snapshot provided by Apple. In order to use the project, you will need to follow the installation instructions at https://swift.org/download/#latest-development-snapshots
+All libraries provided have been built with the Swift version 2.2 snapshot provided by Apple. In order to use a project, you will need to follow the installation instructions at https://swift.org/download/#latest-development-snapshots
