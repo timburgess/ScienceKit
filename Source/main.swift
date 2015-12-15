@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import CorePlot
 
-//print("Hello, World! This is ScienceKit!")
+print("Hello, World! This is ScienceKit!")
 
 // Replace this with code from an example
 

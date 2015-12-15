@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2250E8A11C17E0DB006FA174 /* DotProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250E8A01C17E0DB006FA174 /* DotProduct.swift */; };
 		226780231C1E51AE00228211 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226780221C1E51AE00228211 /* main.swift */; };
+		226780251C1E5F7200228211 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226780241C1E5F7200228211 /* CorePlot.framework */; };
 		22B0AB181C18FEB800927057 /* ReadHDF5andLinRegress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B0AB171C18FEB800927057 /* ReadHDF5andLinRegress.swift */; };
 		22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4CD681C17E3FE00DB3A16 /* CSV.swift */; };
 		22D4CD6D1C17E47F00DB3A16 /* Upsurge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */; };
@@ -32,6 +33,7 @@
 		2250E89D1C17E0DB006FA174 /* ScienceKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScienceKit; sourceTree = BUILT_PRODUCTS_DIR; };
 		2250E8A01C17E0DB006FA174 /* DotProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotProduct.swift; sourceTree = "<group>"; };
 		226780221C1E51AE00228211 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		226780241C1E5F7200228211 /* CorePlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CorePlot.framework; sourceTree = "<group>"; };
 		22B0AB151C18DF0700927057 /* SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.txt"; sourceTree = "<group>"; };
 		22B0AB161C18FE6500927057 /* SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.h5 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.h5"; sourceTree = "<group>"; };
 		22B0AB171C18FEB800927057 /* ReadHDF5andLinRegress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadHDF5andLinRegress.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226780251C1E5F7200228211 /* CorePlot.framework in Frameworks */,
 				22D4CD6D1C17E47F00DB3A16 /* Upsurge.a in Frameworks */,
 				22F8AC841C1A5B58008C6B85 /* HDF5Kit.a in Frameworks */,
 			);
@@ -100,6 +103,7 @@
 		22D4CD671C17E3CD00DB3A16 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				226780241C1E5F7200228211 /* CorePlot.framework */,
 				22D4CD721C17E4F500DB3A16 /* module.modulemap */,
 				22F8AC811C1A5B58008C6B85 /* HDF5Kit.a */,
 				22F8AC821C1A5B58008C6B85 /* HDF5Kit.swiftdoc */,
@@ -265,6 +269,10 @@
 		2250E8A51C17E0DB006FA174 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libs",
@@ -276,6 +284,10 @@
 		2250E8A61C17E0DB006FA174 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libs",
