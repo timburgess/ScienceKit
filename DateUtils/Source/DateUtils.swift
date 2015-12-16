@@ -11,6 +11,16 @@ import Foundation
 
 
 extension NSDate {
+
+  convenience init(year: Int, month: Int, day: Int) {
+    let c = NSDateComponents()
+    (c.year, c.month, c.day) = (year, month, day)
+    
+    let gregorian = NSCalendar(identifier: NSCalendarIdentifierGregorian)
+    let date = gregorian!.dateFromComponents(c)!
+    self.init(timeInterval: 0, sinceDate: date)
+    
+  }
   
   var year: Int {
     get {
@@ -21,6 +31,12 @@ extension NSDate {
   var month: Int {
     get {
       return NSCalendar.currentCalendar().component(.Month, fromDate: self)
+    }
+  }
+
+  var day: Int {
+    get {
+      return NSCalendar.currentCalendar().component(.Day, fromDate: self)
     }
   }
 
