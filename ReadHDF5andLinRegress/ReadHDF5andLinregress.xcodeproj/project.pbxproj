@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221FB35F1C27B64C00CACCF8 /* HDF5Kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 221FB35C1C27B64C00CACCF8 /* HDF5Kit.a */; };
+		221FB36B1C27B79000CACCF8 /* Upsurge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 221FB3681C27B79000CACCF8 /* Upsurge.a */; };
 		226780251C1E5F7200228211 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226780241C1E5F7200228211 /* CorePlot.framework */; };
 		22B0AB181C18FEB800927057 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B0AB171C18FEB800927057 /* main.swift */; };
 		22D4CD691C17E3FE00DB3A16 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4CD681C17E3FE00DB3A16 /* CSV.swift */; };
-		22D4CD6D1C17E47F00DB3A16 /* Upsurge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */; };
-		22F8AC841C1A5B58008C6B85 /* HDF5Kit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F8AC811C1A5B58008C6B85 /* HDF5Kit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		221FB35C1C27B64C00CACCF8 /* HDF5Kit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = HDF5Kit.a; sourceTree = "<group>"; };
+		221FB35D1C27B64C00CACCF8 /* HDF5Kit.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = HDF5Kit.swiftdoc; sourceTree = "<group>"; };
+		221FB35E1C27B64C00CACCF8 /* HDF5Kit.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = HDF5Kit.swiftmodule; sourceTree = "<group>"; };
+		221FB3681C27B79000CACCF8 /* Upsurge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Upsurge.a; sourceTree = "<group>"; };
+		221FB3691C27B79000CACCF8 /* Upsurge.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Upsurge.swiftdoc; sourceTree = "<group>"; };
+		221FB36A1C27B79000CACCF8 /* Upsurge.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = Upsurge.swiftmodule; sourceTree = "<group>"; };
 		2250E89D1C17E0DB006FA174 /* ReadHDF5andLinregress */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReadHDF5andLinregress; sourceTree = BUILT_PRODUCTS_DIR; };
 		226780241C1E5F7200228211 /* CorePlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CorePlot.framework; sourceTree = "<group>"; };
 		228C07501C1FA29B00C73417 /* ScienceKit-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScienceKit-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -34,13 +40,7 @@
 		22B0AB161C18FE6500927057 /* SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.h5 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SST_blended5km_00.025S_130.025W_2014-11-01_2015-11-01.h5"; sourceTree = "<group>"; };
 		22B0AB171C18FEB800927057 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		22D4CD681C17E3FE00DB3A16 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
-		22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Upsurge.a; sourceTree = "<group>"; };
-		22D4CD6B1C17E47F00DB3A16 /* Upsurge.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Upsurge.swiftdoc; sourceTree = "<group>"; };
-		22D4CD6C1C17E47F00DB3A16 /* Upsurge.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = Upsurge.swiftmodule; sourceTree = "<group>"; };
 		22D4CD721C17E4F500DB3A16 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		22F8AC811C1A5B58008C6B85 /* HDF5Kit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = HDF5Kit.a; sourceTree = "<group>"; };
-		22F8AC821C1A5B58008C6B85 /* HDF5Kit.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = HDF5Kit.swiftdoc; sourceTree = "<group>"; };
-		22F8AC831C1A5B58008C6B85 /* HDF5Kit.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = HDF5Kit.swiftmodule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +49,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				226780251C1E5F7200228211 /* CorePlot.framework in Frameworks */,
-				22D4CD6D1C17E47F00DB3A16 /* Upsurge.a in Frameworks */,
-				22F8AC841C1A5B58008C6B85 /* HDF5Kit.a in Frameworks */,
+				221FB36B1C27B79000CACCF8 /* Upsurge.a in Frameworks */,
+				221FB35F1C27B64C00CACCF8 /* HDF5Kit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +98,12 @@
 			children = (
 				226780241C1E5F7200228211 /* CorePlot.framework */,
 				22D4CD721C17E4F500DB3A16 /* module.modulemap */,
-				22F8AC811C1A5B58008C6B85 /* HDF5Kit.a */,
-				22F8AC821C1A5B58008C6B85 /* HDF5Kit.swiftdoc */,
-				22F8AC831C1A5B58008C6B85 /* HDF5Kit.swiftmodule */,
-				22D4CD6A1C17E47F00DB3A16 /* Upsurge.a */,
-				22D4CD6B1C17E47F00DB3A16 /* Upsurge.swiftdoc */,
-				22D4CD6C1C17E47F00DB3A16 /* Upsurge.swiftmodule */,
+				221FB35C1C27B64C00CACCF8 /* HDF5Kit.a */,
+				221FB35D1C27B64C00CACCF8 /* HDF5Kit.swiftdoc */,
+				221FB35E1C27B64C00CACCF8 /* HDF5Kit.swiftmodule */,
+				221FB3681C27B79000CACCF8 /* Upsurge.a */,
+				221FB3691C27B79000CACCF8 /* Upsurge.swiftdoc */,
+				221FB36A1C27B79000CACCF8 /* Upsurge.swiftmodule */,
 				22D4CD681C17E3FE00DB3A16 /* CSV.swift */,
 			);
 			path = Libs;
